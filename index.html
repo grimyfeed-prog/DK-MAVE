@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DK MAVE | Web Designer, Digital Creator &amp; UGC Creator</title>
+  
+  <!-- SEO & Brand Presentation -->
+  <meta name="description" content="Explore DK MAVE — a creative portfolio showcasing modern website design, digital experiences, UGC creation, and visual content for brands.">
+  <meta name="keywords" content="DK MAVE, Dinesh Kumar, Web Designer Madurai, Digital Creator, UGC Creator India, Luxury Website Design, Creative Studio">
+  <meta name="author" content="Dinesh Kumar (DK MAVE)">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080909">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dkmave.com/">
+  <meta property="og:title" content="DK MAVE | Web Designer, Digital Creator &amp; UGC Creator">
+  <meta property="og:description" content="Explore DK MAVE — a creative portfolio showcasing modern website design, digital experiences, UGC creation, and visual content for brands.">
+  <meta property="og:image" content="assets/images/dk-logo.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DK MAVE | Web Designer, Digital Creator &amp; UGC Creator">
+  <meta name="twitter:description" content="Explore DK MAVE — a creative portfolio showcasing modern website design, digital experiences, UGC creation, and visual content for brands.">
+  <meta name="twitter:image" content="assets/images/dk-logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/dk-logo.jpg">
+  <link rel="apple-touch-icon" href="assets/images/dk-logo.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Luxury Serif) & Manrope (Crisp Modern Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) for Creative Brand -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dinesh Kumar",
+    "alternateName": "DK MAVE",
+    "jobTitle": "Web Designer & Digital Creator",
+    "description": "Creative professional combining modern website design, digital experiences, product visuals, UGC video creation, and social media content.",
+    "image": "assets/images/dinesh-portrait.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Madurai",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://www.instagram.com/dk_mave"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Custom Luxury Cursor (Desktop Pointer Devices) -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Logo: DK MAVE Emblem & Wordmark -->
+      <a href="#hero" class="brand-logo" aria-label="DK MAVE - Home">
+        <div class="brand-logo-emblem">
+          <img src="assets/images/dk-logo.jpg" alt="DK MAVE Gold Monogram Logo" width="38" height="38">
+        </div>
+        <div class="brand-logo-text">
+          <span class="brand-name">DK MAVE</span>
+          <span class="brand-sub">STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <a href="#contact" class="btn btn-primary nav-cta">
+        <span>LET'S WORK TOGETHER</span>
+        <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div>
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="brand-logo-emblem">
+            <img src="assets/images/dk-logo.jpg" alt="DK MAVE Logo" width="36" height="36">
+          </div>
+          <div class="brand-logo-text">
+            <span class="brand-name">DK MAVE</span>
+            <span class="brand-sub">CREATIVE BRAND</span>
+          </div>
+        </div>
+        <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close Navigation Menu">&times;</button>
+      </div>
+
+      <nav class="mobile-links" aria-label="Mobile Menu Links">
+        <a href="#hero" class="mobile-link"><span>01. Home</span> <span>↗</span></a>
+        <a href="#services" class="mobile-link"><span>02. Services</span> <span>↗</span></a>
+        <a href="#portfolio" class="mobile-link"><span>03. Portfolio</span> <span>↗</span></a>
+        <a href="#about" class="mobile-link"><span>04. About</span> <span>↗</span></a>
+        <a href="#contact" class="mobile-link"><span>05. Contact</span> <span>↗</span></a>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">START A PROJECT</a>
+      <div class="mobile-contact-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Madurai, Tamil Nadu, India</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         5. HERO SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content reveal-fade">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>INDEPENDENT CREATIVE PROFESSIONAL</span>
+            </div>
+
+            <p class="hero-intro-lead">Hi, I'm</p>
+            <h1 class="hero-name-highlight">Dinesh <span class="text-gold-gradient">Kumar</span></h1>
+
+            <h2 class="hero-headline">
+              Designing <span class="text-gold-gradient">Digital Experiences</span> That Make Brands Stand Out.
+            </h2>
+
+            <p class="hero-title-role">
+              Web Designer • Digital Creator • UGC Creator
+            </p>
+
+            <p class="hero-description">
+              I create premium websites and compelling digital content that help businesses present their brands beautifully, connect with their audiences, and stand out online.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary" id="hero-btn-portfolio">
+                <span>EXPLORE MY WORK</span>
+                <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                <span>START A PROJECT</span>
+              </a>
+            </div>
+
+            <div class="hero-signature">
+              <span>DESIGN × CONTENT × EXPERIENCE</span>
+              <span class="hero-signature-line"></span>
+            </div>
+          </div>
+
+          <!-- Right Column: Dinesh Kumar Authentic Portrait Visual -->
+          <div class="hero-visual reveal-fade delay-1">
+            <div class="hero-glow-ambient" aria-hidden="true"></div>
+
+            <div class="hero-portrait-frame">
+              <!-- Corner luxury accents -->
+              <span class="hero-frame-corner top-left" aria-hidden="true"></span>
+              <span class="hero-frame-corner bottom-right" aria-hidden="true"></span>
+
+              <img 
+                src="assets/images/dinesh-portrait.jpg" 
+                alt="Dinesh Kumar — Web Designer and UGC Creator at DK MAVE" 
+                width="720" 
+                height="900"
+                loading="eager"
+                fetchpriority="high"
+              >
+              <div class="hero-portrait-overlay"></div>
+            </div>
+
+            <!-- Floating Pill Badge: Specialization -->
+            <div class="hero-pill-badge" id="hero-pill">
+              <div class="hero-pill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="hero-pill-text">
+                <span class="hero-pill-label">Creative Focus</span>
+                <span class="hero-pill-val">Web Design × UGC Creation</span>
+              </div>
+            </div>
+
+            <!-- Location Badge -->
+            <div class="hero-location-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Madurai, India • Global Work</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         VALUE HIGHLIGHTS TICKER BAR
+         ----------------------------------------------------------------------- -->
+    <section class="ticker-section" aria-label="Brand Core Competencies">
+      <div class="container">
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="ticker-text">
+              <span class="ticker-title">Premium Web Design</span>
+              <span class="ticker-sub">Modern. Responsive. Fast.</span>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <div class="ticker-text">
+              <span class="ticker-title">Brand Storytelling</span>
+              <span class="ticker-sub">Real Stories. Real People.</span>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <div class="ticker-text">
+              <span class="ticker-title">Short-Form Video</span>
+              <span class="ticker-sub">Engaging. Scroll-Stopping.</span>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="ticker-text">
+              <span class="ticker-title">Mobile-First Craft</span>
+              <span class="ticker-sub">Seamless On Every Device.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         6. SERVICES SECTION ("WHAT I DO")
+         ----------------------------------------------------------------------- -->
+    <section class="services-section" id="services">
+      <div class="container">
+        
+        <header class="section-header reveal-fade">
+          <span class="section-label">WHAT I DO</span>
+          <h2 class="section-title">Creative Solutions. <br><span class="text-gold-gradient">Exceptional Experiences.</span></h2>
+          <p class="section-subtitle">
+            Tailored digital capabilities that connect your brand with high-value audiences through thoughtful design and high-converting visual media.
+          </p>
+        </header>
+
+        <div class="services-grid">
+
+          <!-- SERVICE 01: WEBSITE DESIGN (Featured Card) -->
+          <article class="service-card card-featured reveal-fade">
+            <div class="service-card-image">
+              <img src="assets/images/service-webdesign.jpg" alt="Premium Website Design Workspace" loading="lazy">
+            </div>
+            <div class="service-card-info">
+              <div class="service-card-top">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="service-number">01</span>
+              </div>
+              <h3 class="service-title">Website Design</h3>
+              <p class="service-description">
+                Modern, responsive websites designed to help businesses build credibility and establish a strong online presence.
+              </p>
+              <div class="service-footer">
+                <a href="#contact" class="service-link" data-service-inquire="Website Design">
+                  <span>Inquire Service</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SERVICE 02: WEBSITE REDESIGN -->
+          <article class="service-card reveal-fade delay-1">
+            <div class="service-card-image">
+              <img src="assets/images/service-redesign.jpg" alt="Website Redesign Before and After Showcase" loading="lazy">
+            </div>
+            <div>
+              <div class="service-card-top">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                  </svg>
+                </div>
+                <span class="service-number">02</span>
+              </div>
+              <h3 class="service-title">Website Redesign</h3>
+              <p class="service-description">
+                Transform outdated websites into modern, attractive, user-friendly digital experiences that captivate modern customers.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#contact" class="service-link" data-service-inquire="Website Redesign">
+                <span>Inquire Service</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 03: LANDING PAGE DESIGN -->
+          <article class="service-card reveal-fade">
+            <div class="service-card-image">
+              <img src="assets/images/service-landingpage.jpg" alt="High-Converting Landing Page Design Layout" loading="lazy">
+            </div>
+            <div>
+              <div class="service-card-top">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <span class="service-number">03</span>
+              </div>
+              <h3 class="service-title">Landing Page Design</h3>
+              <p class="service-description">
+                Focused landing pages with compelling layouts, clear messaging, and strong calls to action built for measurable conversion.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#contact" class="service-link" data-service-inquire="Landing Page Design">
+                <span>Inquire Service</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 04: E-COMMERCE WEBSITES -->
+          <article class="service-card reveal-fade delay-1">
+            <div class="service-card-image">
+              <img src="assets/images/service-ecommerce.jpg" alt="Luxury E-Commerce Online Storefront Showcase" loading="lazy">
+            </div>
+            <div>
+              <div class="service-card-top">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </div>
+                <span class="service-number">04</span>
+              </div>
+              <h3 class="service-title">E-Commerce Websites</h3>
+              <p class="service-description">
+                Beautiful online storefront experiences designed to present products and support online shopping with effortless fluidity.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#contact" class="service-link" data-service-inquire="E-Commerce Websites">
+                <span>Inquire Service</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 05: UGC VIDEO CREATION -->
+          <article class="service-card reveal-fade delay-2">
+            <div class="service-card-image" style="height: 120px;">
+              <img src="assets/images/service-ugc.jpg" alt="UGC Video Creation Behind the Scenes" loading="lazy">
+            </div>
+            <div>
+              <div class="service-card-top" style="margin-bottom: 12px;">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                  </svg>
+                </div>
+                <span class="service-number">05</span>
+              </div>
+              <h3 class="service-title">UGC Video Creation</h3>
+              <p class="service-description">
+                Authentic, engaging user-generated-style content for brands, products, and digital campaigns that build genuine trust.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#contact" class="service-link" data-service-inquire="UGC Video Creation">
+                <span>Inquire Service</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 06: PRODUCT VIDEO CREATION -->
+          <article class="service-card reveal-fade">
+            <div class="service-card-image">
+              <img src="assets/images/service-productvideo.jpg" alt="Product Video Creation Studio and Editing Suite" loading="lazy">
+            </div>
+            <div>
+              <div class="service-card-top">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                  </svg>
+                </div>
+                <span class="service-number">06</span>
+              </div>
+              <h3 class="service-title">Product Video Creation</h3>
+              <p class="service-description">
+                Creative product-focused videos that communicate features, benefits, and brand personality with cinematic flair.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#contact" class="service-link" data-service-inquire="Product Video Creation">
+                <span>Inquire Service</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- SERVICE 07: SOCIAL MEDIA CONTENT -->
+          <article class="service-card reveal-fade delay-1">
+            <div class="service-card-image" style="height: 120px;">
+              <img src="assets/images/service-social.jpg" alt="Social Media Short Form Content" loading="lazy">
+            </div>
+            <div>
+              <div class="service-card-top" style="margin-bottom: 12px;">
+                <div class="service-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <span class="service-number">07</span>
+              </div>
+              <h3 class="service-title">Social Media Content</h3>
+              <p class="service-description">
+                Short-form video and digital content concepts designed for social platforms, reels, and high-impact brand communication.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#contact" class="service-link" data-service-inquire="Social Media Content">
+                <span>Inquire Service</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         7. PORTFOLIO SECTION ("SELECTED WORK")
+         ----------------------------------------------------------------------- -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        
+        <header class="section-header reveal-fade">
+          <span class="section-label">SELECTED WORK</span>
+          <h2 class="section-title">A Selection of <span class="text-gold-gradient">My Work.</span></h2>
+          <p class="section-subtitle">
+            Authentic live demonstrations engineered with clean code, modern UX principles, and responsive elegance.
+          </p>
+          <div class="portfolio-disclaimer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Portfolio Demonstrations • Live Deployed Websites</span>
+          </div>
+        </header>
+
+        <div class="portfolio-grid">
+
+          <!-- PROJECT 01: PHOENIX CROSSFIT -->
+          <article class="project-card reveal-fade">
+            <div class="project-media">
+              <img src="assets/images/project-crossfit.jpg" alt="Phoenix CrossFit Gym Website Preview" loading="lazy">
+              <div class="project-media-overlay">
+                <a href="https://phoenix-crossfit.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-quick-view" aria-label="Open Phoenix CrossFit Project">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-badge-row">
+                  <span class="project-category">Fitness • Modern • Responsive</span>
+                  <span class="project-status-tag">Live Showcase</span>
+                </div>
+                <h3 class="project-title">Phoenix CrossFit</h3>
+                <p class="project-desc">
+                  High-energy, responsive website built for a functional fitness gym featuring bold typography, dynamic class schedules, and high-intensity community visual styling.
+                </p>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-live-indicator">
+                  <span>Active Deployment</span>
+                </div>
+                <a href="https://phoenix-crossfit.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-btn" id="btn-project-crossfit">
+                  <span>VIEW PROJECT</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: LUXURY REAL ESTATE -->
+          <article class="project-card reveal-fade delay-1">
+            <div class="project-media">
+              <img src="assets/images/project-realestate.jpg" alt="Luxury Real Estate Website Preview" loading="lazy">
+              <div class="project-media-overlay">
+                <a href="https://dk-sample-real-estate.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-quick-view" aria-label="Open Real Estate Project">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-badge-row">
+                  <span class="project-category">Property • Elegant • Premium</span>
+                  <span class="project-status-tag">Live Showcase</span>
+                </div>
+                <h3 class="project-title">DK Realtors — Luxury Homes</h3>
+                <p class="project-desc">
+                  Sophisticated architectural real estate experience featuring immersive property galleries, cinematic interactive layouts, and refined luxury dark aesthetics.
+                </p>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-live-indicator">
+                  <span>Active Deployment</span>
+                </div>
+                <a href="https://dk-sample-real-estate.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-btn" id="btn-project-realestate">
+                  <span>VIEW PROJECT</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: DINZ GYM DEMO -->
+          <article class="project-card reveal-fade delay-2">
+            <div class="project-media">
+              <img src="assets/images/project-gymdemo.jpg" alt="Dinz Gym Conditioning Website Preview" loading="lazy">
+              <div class="project-media-overlay">
+                <a href="https://dinz-gym.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-quick-view" aria-label="Open Dinz Gym Project">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-badge-row">
+                  <span class="project-category">Fitness • Performance • Web App</span>
+                  <span class="project-status-tag">Live Showcase</span>
+                </div>
+                <h3 class="project-title">Dinz Gym Conditioning</h3>
+                <p class="project-desc">
+                  Sleek athletic gym and strength conditioning web experience with bold interactive sections, membership highlights, and fluid responsive design.
+                </p>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-live-indicator">
+                  <span>Active Deployment</span>
+                </div>
+                <a href="https://dinz-gym.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-btn" id="btn-project-gymdemo">
+                  <span>VIEW PROJECT</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         8. ABOUT SECTION ("BEHIND THE BRAND")
+         ----------------------------------------------------------------------- -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left Visual: Authentic Dinesh Kumar Portrait with Luxury Treatment -->
+          <div class="about-visual reveal-fade">
+            <div class="about-image-wrapper">
+              <img 
+                src="assets/images/dinesh-portrait.jpg" 
+                alt="Dinesh Kumar — Founder & Creative Lead, DK MAVE" 
+                loading="lazy"
+                width="600"
+                height="750"
+              >
+              <div class="about-image-badge">
+                <span class="about-badge-icon">✦</span>
+                <p class="about-badge-quote">"Good design builds trust. Great content inspires action."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content: Authentic Copy & Highlights -->
+          <div class="about-content reveal-fade delay-1">
+            <span class="section-label">BEHIND THE BRAND</span>
+            <h2 class="section-title">Creativity Meets <br><span class="text-gold-gradient">Digital Craft.</span></h2>
+
+            <div class="about-paragraphs">
+              <p>
+                I'm Dinesh Kumar, a web designer and digital creator focused on building engaging digital experiences.
+              </p>
+              <p>
+                My work brings together thoughtful website design, visual storytelling, and creative content production.
+              </p>
+              <p>
+                From business websites to product-focused content, I aim to create work that looks distinctive, communicates clearly, and gives every brand a professional digital presence.
+              </p>
+              <p>
+                My approach combines creativity, attention to detail, and a commitment to continuous improvement.
+              </p>
+            </div>
+
+            <!-- Three Visual Highlights -->
+            <div class="about-highlights-grid">
+              <div class="highlight-box">
+                <div class="highlight-num">01</div>
+                <div class="highlight-title">Thoughtful Design</div>
+                <div class="highlight-sub">Intentional layouts built for clarity and impact.</div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-num">02</div>
+                <div class="highlight-title">Creative Storytelling</div>
+                <div class="highlight-sub">Authentic narratives that resonate with audiences.</div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-num">03</div>
+                <div class="highlight-title">Digital Experiences</div>
+                <div class="highlight-sub">Seamless fluidity across every screen and device.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         9. CREATIVE CAPABILITIES ("MY CREATIVE TOOLKIT")
+         ----------------------------------------------------------------------- -->
+    <section class="toolkit-section" id="toolkit">
+      <div class="container">
+        
+        <header class="section-header center reveal-fade">
+          <span class="section-label">MY CREATIVE TOOLKIT</span>
+          <h2 class="section-title">Tools for <span class="text-gold-gradient">Ideas and Execution.</span></h2>
+          <p class="section-subtitle">
+            Focused, modern software and technologies leveraged to translate concepts into pixel-perfect reality.
+          </p>
+        </header>
+
+        <div class="toolkit-grid">
+
+          <!-- HTML5 -->
+          <div class="tool-card reveal-fade">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 2L2 20L12 23L22 20L20 2H4Z" stroke="#E44D26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.5 7H6.5L7.5 12H16.5L16 16.5L12 17.5L8 16.5L7.8 14" stroke="#E44D26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="tool-name">HTML5</div>
+            <div class="tool-category">Semantic Structure</div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="tool-card reveal-fade delay-1">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 2L2 20L12 23L22 20L20 2H4Z" stroke="#264DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 7H7L7.5 11.5H16.5L15.8 16.5L12 17.5L8.2 16.5L8 14" stroke="#264DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="tool-name">CSS3</div>
+            <div class="tool-category">Modern Styling</div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="tool-card reveal-fade delay-2">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" stroke="#F7DF1E" stroke-width="2"/>
+                <path d="M8 12V17C8 18 7 18 6 17.5" stroke="#F7DF1E" stroke-width="2" stroke-linecap="round"/>
+                <path d="M13 14C13.5 13 15 13 16 14C17 15 16.5 16.5 15 17C13.5 17.5 13 18.5 14 19.5C15 20 17 19.5 17.5 18" stroke="#F7DF1E" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="tool-name">JavaScript</div>
+            <div class="tool-category">Dynamic Logic</div>
+          </div>
+
+          <!-- Figma -->
+          <div class="tool-card reveal-fade delay-3">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2H8.5C6.57 2 5 3.57 5 5.5C5 7.43 6.57 9 8.5 9H12V2Z" fill="#F24E1E"/>
+                <path d="M12 2H15.5C17.43 2 19 3.57 19 5.5C19 7.43 17.43 9 15.5 9H12V2Z" fill="#FF7262"/>
+                <path d="M12 9H8.5C6.57 9 5 10.57 5 12.5C5 14.43 6.57 16 8.5 16H12V9Z" fill="#A259FF"/>
+                <path d="M12 16H8.5C6.57 16 5 17.57 5 19.5C5 21.43 6.57 23 8.5 23C10.43 23 12 21.43 12 19.5V16Z" fill="#0ACF83"/>
+                <circle cx="15.5" cy="12.5" r="3.5" fill="#1ABCFE"/>
+              </svg>
+            </div>
+            <div class="tool-name">Figma</div>
+            <div class="tool-category">UI/UX &amp; Wireframing</div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="tool-card reveal-fade">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#D6AE68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div class="tool-name">GitHub</div>
+            <div class="tool-category">Version Control</div>
+          </div>
+
+          <!-- CapCut -->
+          <div class="tool-card reveal-fade delay-1">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#D6AE68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <div class="tool-name">CapCut</div>
+            <div class="tool-category">UGC Video Editing</div>
+          </div>
+
+          <!-- DaVinci Resolve -->
+          <div class="tool-card reveal-fade delay-2">
+            <div class="tool-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#D6AE68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="7" r="2.5"></circle>
+                <circle cx="7" cy="16" r="2.5"></circle>
+                <circle cx="17" cy="16" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="tool-name">DaVinci Resolve</div>
+            <div class="tool-category">Color &amp; Post-Production</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         10. MY PROCESS ("THE APPROACH")
+         ----------------------------------------------------------------------- -->
+    <section class="process-section" id="process">
+      <div class="container">
+        
+        <header class="section-header reveal-fade">
+          <span class="section-label">THE APPROACH</span>
+          <h2 class="section-title">From Idea to <span class="text-gold-gradient">Experience.</span></h2>
+          <p class="section-subtitle">
+            A methodical four-phase creative workflow designed for transparency, precision, and dependable execution.
+          </p>
+        </header>
+
+        <div class="process-timeline">
+
+          <!-- 01 DISCOVER -->
+          <div class="process-step reveal-fade">
+            <div class="process-number-node">01</div>
+            <h3 class="process-title">DISCOVER</h3>
+            <p class="process-desc">
+              Understand the brand, goals, audience, and requirements through targeted consultation.
+            </p>
+          </div>
+
+          <!-- 02 DESIGN -->
+          <div class="process-step reveal-fade delay-1">
+            <div class="process-number-node">02</div>
+            <h3 class="process-title">DESIGN</h3>
+            <p class="process-desc">
+              Develop a thoughtful visual direction and layout tailored specifically to your brand identity.
+            </p>
+          </div>
+
+          <!-- 03 CREATE -->
+          <div class="process-step reveal-fade delay-2">
+            <div class="process-number-node">03</div>
+            <h3 class="process-title">CREATE</h3>
+            <p class="process-desc">
+              Build the website or produce the agreed content using high-standard development and editing practices.
+            </p>
+          </div>
+
+          <!-- 04 REFINE -->
+          <div class="process-step reveal-fade delay-3">
+            <div class="process-number-node">04</div>
+            <h3 class="process-title">REFINE</h3>
+            <p class="process-desc">
+              Review, improve, test, and prepare the final delivery for seamless launch and engagement.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         11. THE CREATIVE STANDARD (Editorial Quality Benchmarks)
+         ----------------------------------------------------------------------- -->
+    <section class="standard-section" id="standard">
+      <div class="container">
+        
+        <header class="section-header center reveal-fade">
+          <span class="section-label">THE CREATIVE STANDARD</span>
+          <h2 class="section-title">Every Detail Has <span class="text-gold-gradient">A Purpose.</span></h2>
+          <p class="section-subtitle">
+            Thoughtful design, clear communication, and careful execution guide every project.
+          </p>
+        </header>
+
+        <div class="standard-grid">
+
+          <div class="standard-card reveal-fade">
+            <div class="standard-card-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="standard-card-title">Visual Precision</h3>
+            <p class="standard-card-desc">
+              From typographic scale to micro-spacing, every component is placed with deliberate intent. No clutter, no unnecessary noise—only refined luxury design.
+            </p>
+          </div>
+
+          <div class="standard-card reveal-fade delay-1">
+            <div class="standard-card-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="standard-card-title">Authentic Engagement</h3>
+            <p class="standard-card-desc">
+              Whether building an online showcase or creating UGC video content, the focus is authentic connection that builds genuine affinity with viewers.
+            </p>
+          </div>
+
+          <div class="standard-card reveal-fade delay-2">
+            <div class="standard-card-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="standard-card-title">Seamless Delivery</h3>
+            <p class="standard-card-desc">
+              Clean code, fast loading speeds, responsive layouts across all devices, and transparent communication ensure an exceptional project experience.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         12. CONTACT SECTION ("LET'S CREATE SOMETHING GREAT")
+         ----------------------------------------------------------------------- -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left Column: Contact Direct Info -->
+          <div class="contact-info-col reveal-fade">
+            <span class="section-label">LET'S CREATE SOMETHING GREAT</span>
+            <h2 class="section-title">Have a Project <br><span class="text-gold-gradient">In Mind?</span></h2>
+
+            <p class="contact-lead">
+              Whether you need a modern website, a complete redesign, or creative content for your brand, let's talk about what we can create together.
+            </p>
+
+            <div class="contact-action-list">
+
+              <!-- Direct WhatsApp Action -->
+              <a 
+                href="https://wa.me/919003522324?text=Hello%20Dinesh,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="contact-action-card"
+                id="link-whatsapp"
+              >
+                <div class="contact-action-left">
+                  <div class="contact-action-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-action-details">
+                    <span class="contact-action-title">Chat On WhatsApp</span>
+                    <span class="contact-action-value">+91 9003522324</span>
+                  </div>
+                </div>
+                <div class="contact-action-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Direct Email Action -->
+              <a 
+                href="mailto:dkmave2@gmail.com?subject=Project%20Inquiry%20via%20DK%20MAVE%20Portfolio" 
+                class="contact-action-card"
+                id="link-email"
+              >
+                <div class="contact-action-left">
+                  <div class="contact-action-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-action-details">
+                    <span class="contact-action-title">Send An Email</span>
+                    <span class="contact-action-value">dkmave2@gmail.com</span>
+                  </div>
+                </div>
+                <div class="contact-action-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Direct Instagram Action -->
+              <a 
+                href="https://www.instagram.com/dk_mave?dlrf=MW5tNWc4MDdocnRwcQ==" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="contact-action-card"
+                id="link-instagram"
+              >
+                <div class="contact-action-left">
+                  <div class="contact-action-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </div>
+                  <div class="contact-action-details">
+                    <span class="contact-action-title">View Instagram</span>
+                    <span class="contact-action-value">@dk_mave</span>
+                  </div>
+                </div>
+                <div class="contact-action-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- Location Meta Box -->
+            <div class="contact-meta-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div class="contact-meta-text">
+                <strong>Studio Base</strong>
+                <span>Madurai, Tamil Nadu, India — Available for remote &amp; worldwide collaborations</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-card reveal-fade delay-1">
+            <div class="form-header">
+              <h3 class="form-title">Start A Conversation</h3>
+              <p class="form-sub">Fill out the brief details below to connect directly with Dinesh.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group" id="group-name">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alexander Vance" required>
+                <span class="form-error-msg">Please enter your name.</span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alexander@brand.com" required>
+                <span class="form-error-msg">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Service Required -->
+              <div class="form-group" id="group-service">
+                <label for="service-select" class="form-label">Service Required</label>
+                <select id="service-select" name="service" class="form-select">
+                  <option value="Website Design">Website Design</option>
+                  <option value="Website Redesign">Website Redesign</option>
+                  <option value="Landing Page Design">Landing Page Design</option>
+                  <option value="E-Commerce Websites">E-Commerce Websites</option>
+                  <option value="UGC Video Creation">UGC Video Creation</option>
+                  <option value="Product Video Creation">Product Video Creation</option>
+                  <option value="Social Media Content">Social Media Content</option>
+                  <option value="General Creative Consultation">General Creative Consultation</option>
+                </select>
+              </div>
+
+              <!-- Project Details -->
+              <div class="form-group" id="group-message">
+                <label for="message" class="form-label">Project Details</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your brand, goals, timeline, or vision..." required></textarea>
+                <span class="form-error-msg">Please share details about your project.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary form-btn-submit" id="btn-submit-form">
+                <span>SEND MESSAGE</span>
+                <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <p class="form-notice">
+                Direct dispatch to Dinesh via verified WhatsApp or official email. No spam, ever.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       SUBMISSION CONFIRMATION MODAL
+       ========================================================================= -->
+  <div class="contact-modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="contact-modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modal-title">Message Ready To Send</h3>
+      <p class="modal-desc">
+        Your project inquiry is prepared. Choose your preferred communication channel to send directly to Dinesh:
+      </p>
+      <div class="modal-actions">
+        <a href="#" id="modal-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>SEND VIA WHATSAPP (+91 9003522324)</span>
+        </a>
+        <a href="#" id="modal-email-btn" class="btn btn-secondary">
+          <span>SEND VIA EMAIL CLIENT</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="assets/images/dk-logo.jpg" alt="DK MAVE Emblem" class="footer-logo-img" width="34" height="34">
+            <span class="footer-brand-name">DK MAVE</span>
+          </div>
+          <span class="footer-tagline">Web Designer • Digital Creator • UGC Creator</span>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#portfolio" class="footer-link">Portfolio</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/dk_mave?dlrf=MW5tNWc4MDdocnRwcQ==" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="DK MAVE on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="gold-divider">
+        <span class="gold-divider-icon">✦</span>
+      </div>
+
+      <p class="footer-closing">
+        DESIGN WITH PURPOSE. CREATE WITH INTENT.
+      </p>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 DK MAVE. All rights reserved.
+        </p>
+        <div class="footer-credit">
+          <span>Crafted for Dinesh Kumar</span>
+          <span>•</span>
+          <span>Madurai, India</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
